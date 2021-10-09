@@ -15,6 +15,22 @@ body{
    color: #fff;
 }
 
+.text-item p{
+    margin: 0px 16px 0px;
+    font-size: 16px;
+    font-weight: 500;
+    text-shadow: #000!important;
+}
+
+.text-item .botao{
+    width: auto;
+    margin: auto;
+}
+
+.text-item h2{
+    margin: 10px 0px 10px;
+}
+
 .container{
     margin-left: 30px;
 
@@ -100,4 +116,41 @@ header nav a:hover{
 
 .carrosel-filmes{
     margin-top: 5px;
+    z-index: 999;
+}
+.zoom {
+	overflow: hidden;
+}
+
+.zoom img{
+    margin: 0 auto;
+    transition: all .2s;   
+}
+  .zoom:hover img{
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5); 
+    
+ 
+}
+
+  .text-item {
+	position: absolute;
+	left: 5%;
+	right: 5%;
+	bottom: 20px;
+	z-index: 10;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: #ffffff;
+	text-align: center;
+	font-weight: 700;
+	text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+    background: linear-gradient(rgba(0, 0, 0, 0.70),rgba(0,0,0,.70)100%);
+    display: none;
+    
+}
+.zoom:hover .text-item{
+    display: block;
+    
 }
