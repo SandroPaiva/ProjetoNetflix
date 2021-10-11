@@ -10,10 +10,15 @@
 }
 /*elementos base*/
 body{
-   background: var(--preta);
-   font-family: 'Arial', Times, serif;
-   color: #fff;
+   background: var(--preta)!important;
+   font-family: 'Arial', Times, serif!important;
+   color: #fff!important;
 }
+
+.main{
+    margin-top: 100px;
+}
+
 
 .text-item p{
     margin: 0px 16px 0px;
@@ -29,21 +34,32 @@ body{
 
 .text-item h2{
     margin: 10px 0px 10px;
+    font-size: 1rem!important;
 }
 
-.container{
+.conteudo{
     margin-left: 30px;
 
 }
 
-.filme-principal .container{
+.filme-principal .conteudo{
     width: 70%;
 }
 
-header .container{
+header{
+    position: fixed;
+    background: #000;
+    width: 100%;
+    top: 0px;
+
+}
+
+
+header .conteudo{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
+    z-index: 999;
 }
 
 header .logo{
@@ -53,14 +69,21 @@ header .logo{
     font-size: 40px;
 }
 
+header .logo-img{
+    margin: 10px;
+    width: 200px;
+}
+
 header nav a{
     text-decoration: none;
-    color: #aaa;
+    color: #fff!important;
     margin-right: 10px;
+    font-weight: 700;
 }
 
 header nav a:hover{
-    color: #fff;
+    color: #aaa!important;
+    transition: .3s ease all;
 
 }
 
@@ -85,6 +108,7 @@ header nav a:hover{
     margin-top: 15%;
     font-size: 40px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 700;
 }
 
 .botao{
@@ -154,3 +178,39 @@ header nav a:hover{
     display: block;
     
 }
+
+/*Configuração do modal*/
+
+.modal-content h3{
+    text-align: center;
+}
+
+.modal-content a{
+    text-align: center;
+}
+
+.modal-header{
+    align-items: center!important;
+    background-color: rgba(0, 0, 0, 0.70);
+}
+
+.modal-header .fas{
+    color: #fff;
+}
+
+.modal-title {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif!important;
+    font-weight: 700;
+    font-size: 35px;
+    text-align: center;
+}
+.modal-header .close{
+    margin: auto!important;
+}
+
+.modal-footer{
+    justify-content: center!important;
+    font-size: 30px!important;
+}
+
+
